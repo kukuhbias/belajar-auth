@@ -103,7 +103,9 @@ app.get("/resources", (req, res) => __awaiter(void 0, void 0, void 0, function* 
     //check accessToken refreshToken
     if (!accessToken && !refreshToken) {
         console.log("accessToken & refreshToken invalid");
-        return res.status(401).json({ message: "Unauthorized" });
+        return res
+            .status(401)
+            .json({ message: "Unauthorized, please login first !" });
     }
     if (accessToken) {
         try {

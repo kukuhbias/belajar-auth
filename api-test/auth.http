@@ -1,0 +1,22 @@
+### APP
+POST http://localhost:8000/register
+Content-Type: application/json
+
+{
+    "name": "Kukuh bias",
+    "email": "kukuhbias@gmail.com",
+    "password" : "tes123"
+}
+
+### RESOURCE
+GET http://localhost:8000/resources
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MGM5MmIzZTgxOTUyNWM5ZGMyMjE3OCIsIm5hbWUiOiJLdWt1aCBiaWFzIiwiZW1haWwiOiJrdWt1aGJpYXNAZ21haWwuY29tIiwiaWF0IjoxNzI4ODkyNjgxLCJleHAiOjE3Mjg4OTI3MTF9.zVy-cowe2BkrmzGt9LFTUXpGgEXTv753LX7c_dVoH0s
+
+### LOGIN TEST
+POST http://localhost:8000/login
+Content-Type: application/json
+
+{
+    "email": "kukuhbias@gmail.com",
+    "password" : "tes123"
+}
